@@ -1,0 +1,9 @@
+version: '3.5'
+services:
+  bypass_captcha:
+    build: .
+    hostname: bypass_captcha
+    init: true
+    ports:
+      - "127.0.0.1:8080:5000"
+    

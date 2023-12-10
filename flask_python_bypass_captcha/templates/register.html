@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="../static/main.css">
+        <script src="../static/main.min.js"></script>
+    </head>
+    <body>
+        <form class="form" id="myForm" autocomplete="off">
+            <h1 class="text-center">Bypass Captcha</h1>
+            <div class="form-step active">
+                <div class="input-group">
+                    <label class="text-center" for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="input-group ">
+                    <div class="div-center">
+                        <img  src="data:image/png;base64,{{ captcha }}" alt="CAPTCHA">
+                    </div>
+                    <div class="div-center" style="margin-top: 10px;">
+                        <input style="width: 50%;" type="text" name="captcha" id="captcha" >
+                    </div>
+                </div>
+                <div class="div-center">
+                    <button type="submit" class="btn btn-check with-50 ml-auto">Check</a>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
+
